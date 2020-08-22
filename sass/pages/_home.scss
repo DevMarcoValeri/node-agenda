@@ -1,0 +1,66 @@
+// Grid area
+#home-grid-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "home-header"
+    "home-main";
+}
+
+.home-header {
+    grid-area: home-header;
+}
+
+.home-main {
+    grid-area: home-main;
+}
+
+// Header section
+.home-header {
+    height: 40vh;
+
+    .home-header-title {
+        width: 90%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 5rem auto;
+        padding: .5rem .2rem;
+        border: 5px solid #000;
+        border-radius: 25px;
+    }
+}
+
+// Main section
+.home-main {
+
+    section {
+        form {
+            padding: 2rem;
+
+            legend {
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
+            .home-main-form-email,
+            .home-main-form-password,
+            .home-main-form-submit {
+                margin: 1rem;
+                label,
+                input {
+                    display: block;
+                }
+                input[type=email],
+                input[type=password] {
+                    padding: .3rem;
+                }
+                input[type=submit] {
+                    padding: .5rem;
+                    background-color: #fff;
+                }
+            }
+            input {
+                border-radius: 5px;
+            }
+        }
+    }
+}

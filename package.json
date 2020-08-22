@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass sass/main.scss public/css/main.css -w",
     "start": "nodemon app.js"
   },
   "repository": {
@@ -19,7 +20,8 @@
   "homepage": "https://github.com/DevMarcoValeri/node-agenda#readme",
   "dependencies": {
     "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

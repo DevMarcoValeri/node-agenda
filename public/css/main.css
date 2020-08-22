@@ -1,0 +1,56 @@
+#home-grid-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "home-header" "home-main"; }
+
+.home-header {
+  grid-area: home-header; }
+
+.home-main {
+  grid-area: home-main; }
+
+.home-header {
+  height: 40vh; }
+  .home-header .home-header-title {
+    width: 90%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 5rem auto;
+    padding: .5rem .2rem;
+    border: 5px solid #000;
+    border-radius: 25px; }
+
+.home-main section form {
+  padding: 2rem; }
+  .home-main section form legend {
+    font-size: 1.5rem;
+    margin: 1rem; }
+  .home-main section form .home-main-form-email,
+  .home-main section form .home-main-form-password,
+  .home-main section form .home-main-form-submit {
+    margin: 1rem; }
+    .home-main section form .home-main-form-email label,
+    .home-main section form .home-main-form-email input,
+    .home-main section form .home-main-form-password label,
+    .home-main section form .home-main-form-password input,
+    .home-main section form .home-main-form-submit label,
+    .home-main section form .home-main-form-submit input {
+      display: block; }
+    .home-main section form .home-main-form-email input[type=email],
+    .home-main section form .home-main-form-email input[type=password],
+    .home-main section form .home-main-form-password input[type=email],
+    .home-main section form .home-main-form-password input[type=password],
+    .home-main section form .home-main-form-submit input[type=email],
+    .home-main section form .home-main-form-submit input[type=password] {
+      padding: .3rem; }
+    .home-main section form .home-main-form-email input[type=submit],
+    .home-main section form .home-main-form-password input[type=submit],
+    .home-main section form .home-main-form-submit input[type=submit] {
+      padding: .5rem;
+      background-color: #fff; }
+  .home-main section form input {
+    border-radius: 5px; }
+
+* {
+  padding: 0;
+  margin: 0; }
