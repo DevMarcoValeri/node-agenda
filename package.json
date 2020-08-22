@@ -1,0 +1,27 @@
+{
+  "name": "agenda",
+  "version": "1.0.0",
+  "description": "Node Personal agenda made with Node, Express, JavaScript, SASS, CSS3 and HTML5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevMarcoValeri/node-agenda.git"
+  },
+  "author": "Marco Valeri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevMarcoValeri/node-agenda/issues"
+  },
+  "homepage": "https://github.com/DevMarcoValeri/node-agenda#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
