@@ -4,7 +4,8 @@
     grid-template-columns: 1fr;
     grid-template-areas: 
     "home-header"
-    "home-main";
+    "home-main"
+    "footer";
 }
 
 .home-header {
@@ -13,6 +14,10 @@
 
 .home-main {
     grid-area: home-main;
+}
+
+footer {
+    grid-area: footer;
 }
 
 // Header section

@@ -1,13 +1,28 @@
+footer {
+  text-align: center; }
+  footer p {
+    padding: 1rem; }
+    footer p span {
+      font-size: 1.5rem;
+      color: #ff0000; }
+    footer p a {
+      text-decoration: none;
+      color: #123456;
+      font-weight: 900; }
+
 #home-grid-area {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "home-header" "home-main"; }
+  grid-template-areas: "home-header" "home-main" "footer"; }
 
 .home-header {
   grid-area: home-header; }
 
 .home-main {
   grid-area: home-main; }
+
+footer {
+  grid-area: footer; }
 
 .home-header {
   height: 40vh; }
@@ -50,6 +65,77 @@
       background-color: #fff; }
   .home-main section form input {
     border-radius: 5px; }
+
+#menu-grid-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "menu-header" "menu-main" "footer"; }
+
+.menu-header {
+  grid-area: menu-header; }
+
+.menu-main {
+  grid-area: menu-main; }
+
+footer {
+  grid-area: footer; }
+
+.menu-header {
+  height: 50vh;
+  text-align: center; }
+  .menu-header section {
+    margin-top: 5rem; }
+
+.menu-main {
+  height: 50vh; }
+  .menu-main section {
+    text-align: center; }
+    .menu-main section button {
+      padding: 3px;
+      border-radius: 5px; }
+      .menu-main section button a {
+        text-decoration: none;
+        color: #000; }
+
+#days-grid-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "days-header" "days-main" "footer"; }
+
+.days-header {
+  grid-area: days-header; }
+
+.days-main {
+  grid-area: days-main; }
+
+footer {
+  grid-area: footer; }
+
+.days-header {
+  height: 40vh; }
+  .days-header nav {
+    float: right; }
+    .days-header nav li {
+      list-style: none;
+      display: inline;
+      padding: .2rem; }
+      .days-header nav li a {
+        text-decoration: none;
+        color: #000; }
+  .days-header section {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #000; }
+
+.days-main {
+  height: auto;
+  min-height: 50vh;
+  text-align: center; }
+  .days-main form {
+    margin-bottom: 2rem; }
+    .days-main form input[type=text] {
+      margin: .5rem; }
 
 * {
   padding: 0;

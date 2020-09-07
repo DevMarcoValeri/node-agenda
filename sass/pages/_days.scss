@@ -1,0 +1,62 @@
+#days-grid-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "days-header"
+    "days-main"
+    "footer";
+}
+
+.days-header {
+    grid-area: days-header;
+}
+
+.days-main {
+    grid-area: days-main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+// Header
+.days-header {
+    height: 40vh;
+
+    nav {
+        float: right;
+
+        li {
+            list-style: none;
+            display: inline;
+            padding: .2rem;
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+
+    section {
+        margin-top: 2rem;
+        text-align: center;
+        padding: 1rem;
+        border: 1px solid #000;
+    }
+}
+
+// Main
+.days-main {
+    height: auto;
+    min-height: 50vh;
+    text-align: center;
+
+    form {
+        margin-bottom: 2rem;
+
+        input[type=text] {
+            margin: .5rem;
+        }
+    }
+}

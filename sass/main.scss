@@ -1,5 +1,11 @@
+// Import layout
+@import './layout/header';
+@import './layout/footer';
+
 // Import pages
 @import './pages/home';
+@import './pages/menu';
+@import './pages/days';
 
 // CSS reset
 * {

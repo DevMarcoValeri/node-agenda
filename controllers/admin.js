@@ -6,7 +6,7 @@ exports.getLogin = (req, res, next) => {
    let email = req.body.email;
    let password = req.body.password;
 
-   if (Users.valid_user(email, password) === true) {
+   if (Users.valid_user(email, password)) {
        console.log(`Valid user`);
        res.redirect('/menu');
    } else {
@@ -18,6 +18,6 @@ exports.getLogin = (req, res, next) => {
 
 exports.getHome = (req, res, next) => {
     res.render('home', {
-        title: 'Home'
+        title: 'Agenda'
     });
 };

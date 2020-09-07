@@ -9,6 +9,8 @@ const db = require('./util/database');
 
 // Import routes
 const adminRoute = require('./routes/admin');
+const pagesRoute = require('./routes/pages');
+const daysRoute = require('./routes/days');
 
 // Set body-parser
 const bodyParser = require('body-parser');
@@ -22,5 +24,7 @@ app.set('views', 'views');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(adminRoute);
+app.use(pagesRoute);
+app.use(daysRoute);
 
 app.listen(5000);
