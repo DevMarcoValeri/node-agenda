@@ -21,7 +21,7 @@ footer {
 
 // Header
 .days-header {
-    height: 40vh;
+    height: 20vh;
 
     nav {
         float: right;
@@ -52,11 +52,22 @@ footer {
     min-height: 50vh;
     text-align: center;
 
-    form {
+    .days-main-add-note {
         margin-bottom: 2rem;
 
         input[type=text] {
             margin: .5rem;
+        }
+    }
+
+    section {
+        width: 80vw;
+        margin: 1rem auto;
+        padding: .5rem;
+        border: 1px solid #000;
+        
+        form {
+            float: right;
         }
     }
 }

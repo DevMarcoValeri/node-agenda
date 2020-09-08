@@ -1,4 +1,9 @@
-const mysql = require('mysql2');
+//host: 'localhost',
+//user: 'root',
+//database: 'node-agenda',
+//password: ''
+
+const mysql = require('mysql');
 
 const pool = mysql.createPool({
     host: 'localhost',
@@ -7,4 +12,4 @@ const pool = mysql.createPool({
     password: ''
 });
 
-module.exports = pool.promise();
+module.exports = pool;

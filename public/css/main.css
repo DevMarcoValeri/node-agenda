@@ -112,7 +112,7 @@ footer {
   grid-area: footer; }
 
 .days-header {
-  height: 40vh; }
+  height: 20vh; }
   .days-header nav {
     float: right; }
     .days-header nav li {
@@ -132,10 +132,17 @@ footer {
   height: auto;
   min-height: 50vh;
   text-align: center; }
-  .days-main form {
+  .days-main .days-main-add-note {
     margin-bottom: 2rem; }
-    .days-main form input[type=text] {
+    .days-main .days-main-add-note input[type=text] {
       margin: .5rem; }
+  .days-main section {
+    width: 80vw;
+    margin: 1rem auto;
+    padding: .5rem;
+    border: 1px solid #000; }
+    .days-main section form {
+      float: right; }
 
 * {
   padding: 0;
